@@ -15,14 +15,15 @@ import Benefit from "./pages/Benefit/Benefit.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/hero" element={<Hero />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/certificate" element={<Certificate />} />
-      <Route path="/testimonials" element={<Testimonials />} />
-      <Route path="/benefit" element={<Benefit />} />
-      <Route path="/footer" element={<Footer />} />
+   <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/certificate" element={<Certificate />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/benefit" element={<Benefit />} />
+        <Route path="/footer" element={<Footer />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 );

@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import About from "../About/About";
+import Certificate from "../Certificate/Certificate";
+import Benefit from "../Benefit/Benefit";
+import Testimonials from "../Testimonials/Testimonials";
+import Footer from "../Footer/Footer";
 
 const Hero = () => {
   return (
-    <div>
+   <><div>
       <div className="relative h-screen w-full">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1494783367193-149034c05e8f"
-            alt="Background Image"
+            alt="Background "
             className="absolute inset-0 w-full h-full object-cover filter"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50">
@@ -50,7 +55,13 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
+    <About />
+    <Certificate />
+    <Benefit />
+    <Testimonials />
+    <Footer />
+    </> 
+      );
 };
 
 export default Hero;
