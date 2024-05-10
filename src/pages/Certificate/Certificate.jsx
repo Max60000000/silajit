@@ -1,4 +1,5 @@
 import React from "react";
+import logos from "../images/sia.png";
 
 const Certificate = () => {
   return (
@@ -31,15 +32,14 @@ const Certificate = () => {
             </div>
             <div className="col-span-1 flex flex-col items-center">
               <img
-                src="https://5.imimg.com/data5/SM/ZI/DY/SELLER-42012147/ribbon-gold-medal-500x500.jpg"
-                alt="
-             auth"
-                className="object-cover rounded-lg shadow-md"
+                src={logos}
+                alt="logo"
+                className="object-cover rounded-lg w-100"
               />
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>
     </div>
   );
 };

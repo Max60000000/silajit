@@ -3,10 +3,9 @@ import React from "react";
 const Benefit = () => {
   return (
     <>
-      <div className="flex grid-col-3">
-        <div className="p-4">
-          <h4 className="text-3xl  font-bold">Benefitsanu</h4>
-
+      <h2 className="text-3xl p-10 font-bold text-gray-800">Benefits</h2>
+      <div className="flex flex-col md:flex-row md:space-x-2 md:px-10 lg:px-10 xl:px-30">
+        <div className="">
           <h3 className="p-8">
             <div className="text-2xl">Boost Your Vitality</div>
             Rediscover the energetic you! Known for centuries, Shilajit, when
@@ -27,20 +26,19 @@ const Benefit = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="flex justify-center">
           <img
-            src="https://c.ndtvimg.com/2022-07/3hkk8l8_beer_625x300_25_July_22.jpg?im=FaceCrop,algorithm=dnn,width=650,height=650"
+            src="https://i.ebayimg.com/images/g/mY0AAOSwHtJlAEva/s-l1200.jpg"
             alt=""
-            className="py-40"
+            className="py-8 md:py-0 md:w-50"
           />
         </div>
 
-        <div className="px-8">
+        <div className="p-2">
           <div className="p-8">
             <h2 className="text-2xl">Detox Naturally</h2>
             Combat urban pollutants. Fulvic acid in Shilajit works diligently to
-            detoxify and neutralize harmful compounds, ensuring a purified
-            system, free from toxic heavy metals.
+            detoxify and neutralize harmful compounds, ensuring a purified.
           </div>
           <div className="p-8">
             <h2 className="text-2xl">Stabilize Mood</h2>
