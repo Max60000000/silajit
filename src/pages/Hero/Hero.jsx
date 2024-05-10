@@ -14,8 +14,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative">
-      <nav className="absolute top-0 left-0 right-0 bg-transparent border-gray-200 dark:bg-gray-900 z-10">
+    <>
+      <nav className="bg-transparent border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8WkenLVpzJnpsdCF_37Ei6_nMapYn9OH7lkdfgroVg&s" className="h-8" alt="Logo" />
@@ -46,8 +46,9 @@ const Hero = () => {
           </div>
         </div>
       </nav>
-      <div className="relative h-screen text-white overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1494783367193-149034c05e8f')" }}>
+      <div className="relative  h-screen text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f" alt="Background" className="object-cover object-center w-full h-full" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
@@ -55,7 +56,7 @@ const Hero = () => {
           <p className="text-xl text-white mt-4">
             "Nature's secret to unstoppable energy"
           </p>
-          <button className="mt-4 text-4xl bg-red-500 text-white font-bold py-2 px-4 rounded">
+          <button className="mt-4 text-4xl bg-red-500  text-white font-bold py-2 px-4 rounded">
             BUY NOW
           </button>
         </div>
@@ -65,7 +66,7 @@ const Hero = () => {
       <Benefit />
       <Testimonials />
       <Footer />
-    </div>
+    </>
   );
 };
 
