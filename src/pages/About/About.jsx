@@ -30,7 +30,7 @@ const About = () => {
           <div className="col-span-1 flex flex-col items-center">
             <img
               src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
-              alt="About Us Image"
+              alt="About Us "
               className="object-cover rounded-lg shadow-md"
             />
             <button className="mt-4 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
